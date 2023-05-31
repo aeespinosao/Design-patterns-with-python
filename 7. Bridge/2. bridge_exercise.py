@@ -36,14 +36,15 @@ class Renderer(ABC):
         return None
     
 class VectorRenderer(Renderer):
+    @property
     def what_to_render_as(self):
         return 'lines'
         
 class RasterRenderer(Renderer):
+    @property
     def what_to_render_as(self):
         return 'pixels'
         
-# TODO: reimplement Shape, Square, Triangle and Renderer/VectorRenderer/RasterRenderer
 
 import unittest  
 class Evaluate(unittest.TestCase):
