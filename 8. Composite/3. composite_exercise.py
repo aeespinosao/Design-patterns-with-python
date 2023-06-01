@@ -18,7 +18,6 @@ class FirstTestSuite(unittest.TestCase):
 
 from abc import ABC
 from collections.abc import Iterable
-from typing import Iterator
 
 class ValueContainer(Iterable, ABC):
     @property
